@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Width of the page at the width of its own screen-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--getbootstrap.com-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="keywords" content="htmlcss bootstrap sticky top menu, navbar, CSS examples" />
+        <meta name="description" content="Bootstrap sticky header menu for any type of project, Bootstrap 4" />
+        <!--getbootstrap.com-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Galery</title>
+    </head>
+    <body>
+        <div class="maintitle">
+            <h1>
+                Galery
+                <img src="Whale.jpg" class="imageRight" alt="Front Picture">
+            </h1>
+        </div>
+        <!--getbootstrap.com-->
+        <!-- section-header.// -->
+<!-- ========================= SECTION CONTENT ========================= -->
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-primary">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="topnavbar">
+                    <a href="index.html">Home</a>
+                    <a href="About.html">About Me</a>
+                    <a class="active" href="Gallery.html">Galery</a>
+                    <a href="Contact.html">Contact</a>
+                 </div>
+            </div><!-- container //  -->
+        </nav>
+        <!--getbootstrap.com-->
+
+        <!-- Container for the image gallery -->
+        <div class="container">
+
+            <!-- Full-width images with number text -->
+            <div class="photos">
+                <div class="numbertext">1 / 10</div>
+                    <img src="1.family.jpg" alt="1. Family" style="width:68.2%">
+            </div>
+
+            <div class="photos">
+                <div class="numbertext">2 / 10</div>
+                    <img src="2.sofiababy.jpg" alt="2. Sofia Baby" style="width:89.8%">
+            </div>
+
+            <div class="photos">
+                <div class="numbertext">3 / 10</div>
+                    <img src="3.sisters.jpg" alt="3. Sisters" style="width:50.5%">
+            </div>
+
+            <div class="photos">
+                <div class="numbertext">4 / 10</div>
+                    <img src="4.spouses.jpg" alt="4. Spouses" style="width:37.9%">
+            </div>
+
+            <div class="photos">
+                <div class="numbertext">5 / 10</div>
+                    <img src="5.estefania.jpg" alt="5. Estefania" style="width:37.9%">
+            </div>
+
+            <div class="photos">
+                <div class="numbertext">6 / 10</div>
+                    <img src="6.brownie.jpg" alt="6. Brownie" style="width:37.9%">
+            </div>
+
+            <div class="photos">
+                <div class="numbertext">7 / 10</div>
+                    <img src="7.dadandamy.jpg" alt="7. Dad and Amy" style="width:67.4%">
+            </div>
+
+            <div class="photos">
+                <div class="numbertext">8 / 10</div>
+                    <img src="8.dadandnenas.jpg" alt="8.Dad and Nenas" style="width:37.9%">
+            </div>
+
+            <div class="photos">
+                <div class="numbertext">9 / 10</div>
+                    <img src="9.dadamybrownie.jpg" alt="9.Dad, Amy, Brownie" style="width:37.9%">
+            </div>
+
+            <div class="photos">
+                <div class="numbertext">10 / 10</div>
+                    <img src="9.momyandsofi.jpg" alt="9.Mom and Sofi" style="width:37.9%">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Image text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail images -->
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="1.family.jpg" style="width:68.2%" onclick="currentSlide(1)" alt="1. Family">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="2.sofiababy.jpg" style="width:89.8%" onclick="currentSlide(2)" alt="2. Sofia Baby">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="3.sisters.jpg" style="width:50.5%" onclick="currentSlide(3)" alt="3. Sisters">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="4.spouses.jpg" style="width:37.9%" onclick="currentSlide(4)" alt="4. Spouses">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="5.estefania.jpg" style="width:37.9%" onclick="currentSlide(5)" alt="5. Estefania">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="6.brownie.jpg" style="width:37.9%" onclick="currentSlide(6)" alt="6. Brownie">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="7.dadandamy.jpg" style="width:67.4%" onclick="currentSlide(7)" alt="7. Dad and Amy">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="8.dadandnenas.jpg" style="width:37.9%" onclick="currentSlide(8)" alt="8.Dad and Nenas">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="9.dadamybrownie.jpg" style="width:37.9%" onclick="currentSlide(9)" alt="9.Dad, Amy, Brownie">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="9.momyandsofi.jpg" style="width:37.9%" onclick="currentSlide(10)" alt="9.Mom and Sofi">
+                </div>
+            </div>
+        </div>
+
+		<!-- JavaScript to activate the actions of the gallery-->
+		<script src="script.js"></script>
+    </body>
+</html>

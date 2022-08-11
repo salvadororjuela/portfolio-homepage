@@ -1,0 +1,223 @@
+/* Maintitle div color and distribution */
+.maintitle {
+    background-color: #400bff;
+    color: #fff;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+    padding: 1rem 1rem;
+    text-align: left;
+}
+
+.distributionL {
+    margin-bottom: 1rem;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    padding: 1rem 1rem;
+    text-align: left;
+}
+
+.distributionR {
+    margin-bottom: 1rem;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    padding: 1rem 1rem;
+    text-align: right;
+}
+
+/* To align images floating on the right or the left*/
+.imageRight {
+    float: right;
+    padding: 1rem 1rem;
+    margin: 5px;
+    display: block;
+    border: 4px black;
+    background: white;
+}
+
+.imageLeft {
+    float: left;
+    padding: 1rem 1rem;
+    margin: 5px;
+    display: block;
+    border: 4px black;
+    background: white;
+}
+h1 {
+    font-family: 'Courrier', sans-serif;
+    font-size: 64px;
+    text-align: left;
+}
+
+h4 {
+  text-align: justify;
+  font-size: 18px;
+  color: darkgray;
+}
+
+h5 {
+  text-align: justify;
+  font-size: 20px;
+  color: black;
+}
+
+p {
+  text-align: justify;
+}
+/* Add a black background color to the top navigation */
+.topnavbar {
+  background-color: lightgrey;
+  overflow: hidden;
+  margin-left: 0.1rem;
+  color: black;
+  padding: 0.1rem 0.1rem;
+  float: left;
+}
+
+/* Style the links inside the navigation bar */
+.topnavbar a {
+  float: left;
+  color: blue;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnavbar :hover {
+  background-color: #20C1E1;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.active {
+  background-color: #87C1E6;
+  color: white;
+}
+/* .topnavbar source https://www.w3schools.com/howto/howto_js_topnav.asp*/
+
+/* Back to top button styling*/
+#bttButton {
+  position: fixed;
+  display: none;
+  right: 30px;
+  bottom: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  outline: none;
+  z-index: 99;
+  border: none;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+#bttButton:hover {
+  background-color: #555;
+}
+
+
+/* Slideshow Gallery source https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_gallery*/
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  text-align: center;
+}
+
+/* Hide the images by default */
+.photos {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: inherit;
+  top: 45%;
+  width: auto;
+  padding: 1rem;
+  color: black;
+  font-weight: bold;
+  font-size: 40px;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Fifteen columns side by side */
+.column {
+  float: right;
+  width: 10%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.icon:hover {
+  filter:
+    invert(0.5)
+    sepia(1)
+    hue-rotate(200deg)
+    saturate(4)
+    brightness(1);
+}
+
+#email {
+  width: 100;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 15px;
+  margin-left: 4.5rem;
+}
